@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${poppins.variable}`}
     >
-      <body className="font-sans bg-white text-gray-900">
+      <body className="font-sans bg-white text-gray-900 overflow-x-hidden">
         <Header />
         {children}
         <Footer />
