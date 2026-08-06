@@ -247,7 +247,13 @@ export default function MobileMenu({ open, setOpen }) {
                     </motion.div>
                   )}
                 </AnimatePresence>
-
+                <Link
+                  href="/contact"
+                  onClick={() => setOpen(false)}
+                  className="block rounded-xl p-4 transition hover:bg-gray-100"
+                >
+                  Contact
+                </Link>
                 {/* Contact */}
 
                 <Link
