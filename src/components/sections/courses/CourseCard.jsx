@@ -123,7 +123,7 @@ export default function CourseCard({ course }) {
 
         <div className="relative h-72 overflow-hidden">
           <Image
-            src={course.image}
+            src={course.heroImage}
             alt={course.title}
             fill
             className="object-cover transition duration-700 group-hover:scale-110"

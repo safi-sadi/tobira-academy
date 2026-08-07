@@ -1,5 +1,5 @@
 const ceoData = {
-  name: "Safi",
+  name: "Rimon Chowdhury",
 
   designation: "Founder & CEO",
 

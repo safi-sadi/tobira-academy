@@ -6,12 +6,6 @@ import Counter from "./Counter";
 export default function BentoCard({ item, index }) {
   const Icon = item.icon;
 
-  const sizeClass = {
-    large: "md:col-span-2 md:row-span-2",
-    wide: "md:col-span-2",
-    medium: "md:col-span-2",
-    small: "",
-  };
 
   return (
     <motion.div
@@ -46,7 +40,6 @@ export default function BentoCard({ item, index }) {
         transition-all
         duration-500
         hover:shadow-[0_35px_90px_rgba(239,68,68,.15)]
-        ${sizeClass[item.size]}
       `}
     >
       {/* Glow */}

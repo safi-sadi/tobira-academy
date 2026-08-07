@@ -108,7 +108,7 @@ export default function CoverflowCard({
             {/* Background */}
 
             <Image
-                src={service.image}
+                src={service.heroImage}
                 alt={service.title}
                 fill
                 className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
@@ -124,7 +124,14 @@ export default function CoverflowCard({
 
             {/* Content */}
 
-            <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-2xl transition-all duration-500 group-hover:bg-white/15">
+            <div className="absolute bottom-5 left-5 right-5 rounded-3xl
+border border-white/20
+bg-white/[0.06]
+backdrop-blur-md
+p-6
+shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_8px_32px_rgba(0,0,0,0.15)]
+transition-all duration-500
+group-hover:bg-white/[0.10]">
 
                 <h3 className="text-2xl font-bold tracking-tight text-white">
                     {service.title}

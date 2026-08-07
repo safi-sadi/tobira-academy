@@ -103,29 +103,23 @@ export default function Coverflow({
             setSelected(indexAt(target));
 
             const animate = () => {
-
                 const remaining = target - posRef.current;
 
-                if (Math.abs(remaining) < 0.0005) {
-
+                if (Math.abs(remaining) < 0.001) {
                     posRef.current = target;
-
                     paint();
-
                     rafRef.current = null;
-
                     return;
-
                 }
 
-                posRef.current += remaining * 0.16;
+                const ease = 0.11;
+
+                posRef.current += remaining * ease;
 
                 paint();
 
                 rafRef.current = requestAnimationFrame(animate);
-
             };
-
             rafRef.current = requestAnimationFrame(animate);
 
         },
