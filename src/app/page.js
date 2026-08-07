@@ -3,11 +3,13 @@ import Hero from "@/components/sections/home/Hero/Hero";
 import About from "@/components/sections/home/About/About";
 import Services from "@/components/sections/home/Services/Services";
 import Destinations from "@/components/sections/home/Destinations/Destinations";
-import WhyChooseUs from "@/components/sections/home/WhyChooseUs/WhyChooseUs";
-import Testimonials from "@/components/sections/home/Testimonials/Testimonials";
-import Team from "@/components/sections/home/Team/Team";
-import Courses from "@/components/sections/home/Courses/Courses";
+import WhyChooseUs from "@/components/sections/home/whychoose/WhyChooseUs";
+import TestimonialsSection from "@/components/sections/home/Testimonials/TestimonialsSection";
+import TeamSection from "@/components/sections/home/team/TeamSection";
+// import Courses from "@/components/sections/home/Courses/Courses";
+import CoursesSection from "@/components/sections/home/Courses/CoursesSection";
 import CEOMessage from "@/components/sections/home/CEOMessage/CEOMessage";
+import CEOSection from "@/components/sections/home/CEOMessage/CEOSection";
 
 import { client } from "@/sanity/lib/client";
 import { heroQuery } from "@/sanity/queries/heroQuery";
@@ -41,12 +43,11 @@ export default async function Home() {
       <Hero data={heroData} />
       <About data={aboutData} />
       <Services />
-      <Destinations />
+      <CoursesSection />
       <WhyChooseUs />
-      <Courses />
-      <Testimonials />
-      <Team />
-      <CEOMessage /> 
+      <TestimonialsSection />
+      <TeamSection />
+      <CEOSection />
       
     </>
   );

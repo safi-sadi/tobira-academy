@@ -1,0 +1,200 @@
+.team-card {
+  position: relative;
+  width: 320px;
+  height: 430px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid rgba(255,255,255,.6);
+  box-shadow: 0 25px 60px rgba(0,0,0,.12);
+  transition: all .8s ease;
+}
+
+.team-card:hover{
+  transform: translateY(-10px) scale(1.03);
+}
+
+.team-background{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+      135deg,
+      #991b1b 0%,
+      #dc2626 45%,
+      #ef4444 100%
+  );
+}
+
+.team-image{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+}
+
+.team-image img{
+  transition:1s ease;
+}
+
+.team-card:hover .team-image img{
+  transform:scale(1.08);
+}
+
+.team-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+      to top,
+      rgba(0,0,0,.65),
+      rgba(0,0,0,.05)
+  );
+}
+
+.team-info{
+  position:absolute;
+  left:25px;
+  bottom:25px;
+  z-index:20;
+  color:white;
+  transition:.6s;
+}
+
+.team-info h3{
+  font-size:24px;
+  font-weight:800;
+  line-height:1.1;
+}
+
+.team-info p{
+  margin-top:6px;
+  font-size:14px;
+  opacity:.9;
+}
+
+.team-card:hover .team-info{
+  transform:translateY(-55px);
+}
+
+/* ============================= */
+
+/* ============================= */
+
+.team-box{
+  position:absolute;
+
+  backdrop-filter:blur(14px);
+
+  background:rgba(255,255,255,.18);
+
+  border-top:2px solid rgba(255,255,255,.6);
+  border-right:1px solid rgba(255,255,255,.5);
+
+  box-shadow:-8px 8px 35px rgba(0,0,0,.18);
+
+  transition:1s ease;
+
+  z-index:30;
+
+  overflow:hidden;
+
+  border-radius:
+  10% 13% 42% 0%
+  /
+  10% 12% 75% 0%;
+}
+
+/* Icon position */
+
+.team-box svg{
+  position:absolute;
+
+  top:20px;
+  right:20px;
+
+  width:24px;
+  height:24px;
+
+  color:white;
+
+  transition:.35s ease;
+}
+
+.team-box:hover svg{
+  transform:scale(1.18);
+}
+
+/* ============================= */
+
+.team-box1{
+
+  width:72%;
+  height:72%;
+
+  left:-72%;
+  bottom:-72%;
+}
+
+.team-box2{
+
+  width:52%;
+  height:52%;
+
+  left:-52%;
+  bottom:-52%;
+
+  transition-delay:.15s;
+}
+
+.team-box3{
+
+  width:34%;
+  height:34%;
+
+  left:-34%;
+  bottom:-34%;
+
+  transition-delay:.3s;
+}
+
+.team-box4{
+
+  width:18%;
+  height:18%;
+
+  left:-18%;
+  bottom:-18%;
+
+  transition-delay:.45s;
+}
+
+/* ============================= */
+
+.team-card:hover .team-box{
+
+  left:-2px;
+  bottom:-2px;
+}
+
+/* social hover colors */
+
+.team-box1:hover{
+
+  background:#1877f2;
+}
+
+.team-box2:hover{
+
+  background:#E1306C;
+}
+
+.team-box3:hover{
+
+  background:#0A66C2;
+}
+
+.team-box4:hover{
+
+  background:#25D366;
+}
