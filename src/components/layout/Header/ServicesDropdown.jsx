@@ -9,6 +9,7 @@ import {
   BookOpen,
   Home,
   Plane,
+  ArrowUpRight,
 } from "lucide-react";
 
 const services = [
@@ -47,28 +48,82 @@ const services = [
 export default function ServicesDropdown() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 8 }}
-      transition={{ duration: 0.2 }}
+      initial={{
+        opacity: 0,
+        y: 8,
+        scale: 0.97,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      exit={{
+        opacity: 0,
+        y: 6,
+        scale: 0.98,
+      }}
+      transition={{
+        duration: 0.22,
+        ease: [0.22, 1, 0.36, 1],
+      }}
       className="
-        absolute
-        left-1/2
-        top-full
-        z-50
-        mt-4
-        w-80
-        -translate-x-1/2
+        w-[350px]
         overflow-hidden
-        rounded-2xl
+        rounded-[22px]
         border
-        border-gray-200
-        bg-white/95
-        backdrop-blur-xl
-        shadow-xl
+        border-white/70
+        bg-white/[0.88]
+        shadow-[0_25px_70px_rgba(15,23,42,.16)]
+        backdrop-blur-2xl
+        backdrop-saturate-150
       "
     >
-      <div className="py-2">
+
+      {/* Top highlight */}
+
+      <div
+        className="
+          h-px
+          w-full
+          bg-gradient-to-r
+          from-transparent
+          via-red-300
+          to-transparent
+        "
+      />
+
+      {/* Header */}
+
+      <div className="px-5 pb-3 pt-5">
+
+        <p
+          className="
+            text-[10px]
+            font-bold
+            uppercase
+            tracking-[0.2em]
+            text-red-500
+          "
+        >
+          What we offer
+        </p>
+
+        <h3 className="mt-1 text-lg font-bold text-slate-900">
+          Our Services
+        </h3>
+
+        <p className="mt-1 text-xs text-slate-500">
+          Everything you need for your journey to Japan.
+        </p>
+
+      </div>
+
+
+      {/* Services */}
+
+      <div className="px-2 pb-2">
+
         {services.map((service) => {
           const Icon = service.icon;
 
@@ -78,61 +133,120 @@ export default function ServicesDropdown() {
               href={service.href}
               className="
                 group
-                mx-2
                 flex
                 items-center
                 gap-3
                 rounded-xl
-                px-4
-                py-3
+                px-3
+                py-2.5
                 transition-all
                 duration-300
                 hover:bg-red-50
               "
             >
+
               <div
                 className="
                   flex
-                  h-10
-                  w-10
+                  h-9
+                  w-9
+                  shrink-0
                   items-center
                   justify-center
                   rounded-xl
-                  bg-red-100
+                  bg-red-50
                   text-red-600
-                  transition
-                  group-hover:scale-110
+                  transition-all
+                  duration-300
+                  group-hover:bg-red-600
+                  group-hover:text-white
+                  group-hover:shadow-md
+                  group-hover:shadow-red-200
                 "
               >
-                <Icon size={18} />
+                <Icon size={17} />
               </div>
 
-              <span className="font-medium text-gray-700 group-hover:text-red-600">
+              <span
+                className="
+                  flex-1
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  group-hover:text-red-600
+                "
+              >
                 {service.title}
               </span>
+
+              <ArrowUpRight
+                size={15}
+                className="
+                  text-slate-300
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover:translate-x-0.5
+                  group-hover:-translate-y-0.5
+                  group-hover:text-red-500
+                  group-hover:opacity-100
+                "
+              />
+
             </Link>
           );
         })}
+
       </div>
 
-      <div className="border-t bg-gray-50 p-3">
+
+      {/* Footer */}
+
+      <div
+        className="
+          border-t
+          border-slate-200/70
+          bg-slate-50/60
+          p-3
+        "
+      >
         <Link
           href="/services"
           className="
-            block
+            group
+            flex
+            items-center
+            justify-center
+            gap-2
             rounded-xl
             bg-red-600
-            py-3
-            text-center
+            py-2.5
+            text-sm
             font-semibold
             text-white
-            transition
+            shadow-[0_8px_20px_rgba(220,38,38,.18)]
+            transition-all
+            duration-300
+            hover:-translate-y-0.5
             hover:bg-red-700
+            hover:shadow-[0_12px_25px_rgba(220,38,38,.25)]
           "
         >
-          View All Services →
+          View All Services
+
+          <ArrowUpRight
+            size={15}
+            className="
+              transition-transform
+              duration-300
+              group-hover:-translate-y-0.5
+              group-hover:translate-x-0.5
+            "
+          />
         </Link>
       </div>
+
     </motion.div>
   );
 }

@@ -1,86 +1,404 @@
 "use client";
 
-import { Target, Eye, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
+import {
+  Compass,
+  Eye,
+  Target,
+  ArrowUpRight,
+} from "lucide-react";
 
-const cards = [
+const items = [
   {
+    number: "01",
     title: "Our Mission",
     icon: Target,
     description:
-      "To empower Bangladeshi students with honest guidance, quality education opportunities, and complete support throughout their study abroad journey.",
+      "To empower students with honest guidance, quality education, and personalized support so they can confidently pursue their dreams in Japan.",
   },
   {
+    number: "02",
     title: "Our Vision",
     icon: Eye,
     description:
-      "To become Bangladesh's most trusted education consultancy by creating successful international graduates who make a positive global impact.",
+      "To become a trusted bridge between Bangladesh and Japan, creating meaningful opportunities for students to learn, grow, and build successful futures.",
   },
   {
-    title: "Our Strategy",
-    icon: Rocket,
+    number: "03",
+    title: "Our Approach",
+    icon: Compass,
     description:
-      "Provide transparent counseling, Japanese language education, university admission, visa processing, and post-arrival support under one roof.",
+      "We combine professional expertise with personal care, guiding every student through each stage of their journey with transparency and dedication.",
   },
 ];
 
-export default function MissionVission() {
+export default function AboutMission() {
   return (
-    <section className="bg-slate-50 py-15">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative overflow-hidden bg-slate-950 py-32">
 
-        <div className="mx-auto max-w-3xl text-center">
+      {/* Background Glow */}
 
-          <span className="font-semibold uppercase tracking-[4px] text-red-600">
-            Our Purpose
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          h-[600px]
+          w-[600px]
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-red-600/10
+          blur-[150px]
+        "
+      />
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-40
+          top-20
+          h-[350px]
+          w-[350px]
+          rounded-full
+          bg-red-500/10
+          blur-[120px]
+        "
+      />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Heading */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 35,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+            amount: 0.2,
+          }}
+          transition={{
+            duration: 0.7,
+          }}
+          className="mx-auto max-w-3xl text-center"
+        >
+
+          <span
+            className="
+              inline-flex
+              rounded-full
+              border
+              border-red-500/20
+              bg-red-500/10
+              px-5
+              py-2
+              text-sm
+              font-semibold
+              text-red-400
+            "
+          >
+            What Drives Us
           </span>
 
-          <h2 className="mt-5 text-5xl font-bold">
-            Mission, Vision & Strategy
+          <h2
+            className="
+              mt-6
+              text-4xl
+              font-black
+              leading-tight
+              tracking-tight
+              text-white
+              md:text-5xl
+            "
+          >
+            Purpose Behind
+            <br />
+
+            <span className="text-red-500">
+              Everything We Do.
+            </span>
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Everything we do is focused on helping students build
-            successful international academic careers through
-            professional guidance and long-term support.
+          <p
+            className="
+              mt-6
+              text-lg
+              leading-8
+              text-white/60
+            "
+          >
+            Our work is guided by a simple belief: when students have
+            the right guidance, the right preparation, and the right
+            support, their possibilities become limitless.
           </p>
 
-        </div>
+        </motion.div>
 
-        <div className="mt-20 grid gap-8 lg:grid-cols-3">
 
-          {cards.map((card, index) => {
-            const Icon = card.icon;
+        {/* Cards */}
+
+        <div
+          className="
+            mt-20
+            grid
+            gap-6
+            md:grid-cols-3
+          "
+        >
+
+          {items.map((item, index) => {
+            const Icon = item.icon;
 
             return (
               <motion.div
-                key={card.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.2,
+                key={item.number}
+                initial={{
+                  opacity: 0,
+                  y: 60,
                 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="rounded-3xl bg-white p-10 shadow-lg transition-all hover:shadow-2xl"
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.15,
+                }}
+                transition={{
+                  duration: 0.65,
+                  delay: index * 0.12,
+                }}
+                className="
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-[30px]
+                  border
+                  border-white/10
+                  bg-white/[0.06]
+                  p-8
+                  backdrop-blur-xl
+                  transition-all
+                  duration-500
+                  hover:-translate-y-2
+                  hover:border-red-500/30
+                  hover:bg-white/[0.09]
+                "
               >
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-red-100 text-red-600">
-                  <Icon size={36} />
+
+                {/* Hover Glow */}
+
+                <div
+                  className="
+                    pointer-events-none
+                    absolute
+                    -right-20
+                    -top-20
+                    h-48
+                    w-48
+                    rounded-full
+                    bg-red-600/0
+                    blur-[70px]
+                    transition-all
+                    duration-700
+                    group-hover:bg-red-600/20
+                  "
+                />
+
+                {/* Number */}
+
+                <div
+                  className="
+                    absolute
+                    right-7
+                    top-7
+                    text-sm
+                    font-bold
+                    tracking-widest
+                    text-white/20
+                    transition-colors
+                    duration-300
+                    group-hover:text-red-500/60
+                  "
+                >
+                  {item.number}
                 </div>
 
-                <h3 className="mt-8 text-3xl font-bold">
-                  {card.title}
+
+                {/* Icon */}
+
+                <div
+                  className="
+                    relative
+                    flex
+                    h-14
+                    w-14
+                    items-center
+                    justify-center
+                    rounded-2xl
+                    border
+                    border-red-500/20
+                    bg-red-500/10
+                    text-red-400
+                    transition-all
+                    duration-500
+                    group-hover:scale-110
+                    group-hover:bg-red-600
+                    group-hover:text-white
+                  "
+                >
+                  <Icon size={25} strokeWidth={1.8} />
+                </div>
+
+
+                {/* Content */}
+
+                <h3
+                  className="
+                    relative
+                    mt-10
+                    text-2xl
+                    font-bold
+                    text-white
+                  "
+                >
+                  {item.title}
                 </h3>
 
-                <p className="mt-6 leading-8 text-gray-600">
-                  {card.description}
+                <p
+                  className="
+                    relative
+                    mt-5
+                    text-base
+                    leading-8
+                    text-white/55
+                    transition-colors
+                    duration-300
+                    group-hover:text-white/70
+                  "
+                >
+                  {item.description}
                 </p>
+
+
+                {/* Bottom Line */}
+
+                <div
+                  className="
+                    relative
+                    mt-8
+                    h-px
+                    w-full
+                    overflow-hidden
+                    bg-white/10
+                  "
+                >
+                  <div
+                    className="
+                      h-full
+                      w-0
+                      bg-gradient-to-r
+                      from-red-600
+                      to-red-400
+                      transition-all
+                      duration-700
+                      group-hover:w-full
+                    "
+                  />
+                </div>
+
+
+                {/* Arrow */}
+
+                <div
+                  className="
+                    mt-6
+                    flex
+                    h-10
+                    w-10
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/10
+                    text-white/40
+                    transition-all
+                    duration-300
+                    group-hover:border-red-500/40
+                    group-hover:bg-red-600
+                    group-hover:text-white
+                  "
+                >
+                  <ArrowUpRight
+                    size={17}
+                    className="
+                      transition-transform
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                    "
+                  />
+                </div>
+
               </motion.div>
             );
           })}
 
         </div>
+
+
+        {/* Bottom Statement */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            delay: 0.5,
+            duration: 0.7,
+          }}
+          className="
+            mx-auto
+            mt-20
+            max-w-4xl
+            text-center
+          "
+        >
+
+          <div className="mx-auto mb-6 h-px w-20 bg-red-500/60" />
+
+          <p
+            className="
+              text-2xl
+              font-medium
+              leading-10
+              text-white/80
+              md:text-3xl
+            "
+          >
+            "Your success is not just a destination.
+            <span className="text-red-500">
+              {" "}It's a journey we take together.
+            </span>"
+          </p>
+
+        </motion.div>
 
       </div>
     </section>
