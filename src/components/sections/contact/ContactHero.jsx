@@ -43,7 +43,7 @@ export default function ContactHero() {
             <PhoneCall size={18} className="text-white" />
 
             <span className="text-sm font-semibold uppercase tracking-wider text-white">
-              Contact TW Education
+              Contact Tobira Language Academy
             </span>
 
           </div>

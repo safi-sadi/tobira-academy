@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How can I study in Japan through TW Education?",
+    question: "How can I study in Japan through Tobira Language Academy?",
     answer:
       "We guide you through the complete process including university selection, admission, document preparation, visa processing, and pre-departure support."
   },
