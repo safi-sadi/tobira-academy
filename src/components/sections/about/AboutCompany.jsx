@@ -332,7 +332,7 @@ export default function AboutCompany() {
                 text-slate-600
               "
             >
-              TW Education is a student-focused education consultancy
+              Tobira Language Academy is a student-focused education consultancy
               dedicated to helping ambitious students from Bangladesh
               pursue meaningful educational and career opportunities
               in Japan.

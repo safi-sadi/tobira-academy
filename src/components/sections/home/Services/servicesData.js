@@ -70,7 +70,7 @@ export const services = [
     title: "University Admission",
     description:
       "Get professional guidance for admission into top Japanese universities and colleges with complete document support.",
-    href: "/services/university-admission",
+    href: "/services/university-admission-support",
   },
 
   {
@@ -79,7 +79,7 @@ export const services = [
     title: "Visa Processing",
     description:
       "From documentation to embassy preparation, we ensure a smooth and successful student visa process.",
-    href: "/services/visa-processing",
+    href: "/services/student-visa-processing",
   },
 
   {
@@ -88,7 +88,7 @@ export const services = [
     title: "Japanese Language",
     description:
       "JLPT-focused Japanese language programs from N5 to N1 taught by experienced instructors.",
-    href: "/courses",
+    href: "/services/language-preparation",
   },
 
   {
@@ -97,7 +97,7 @@ export const services = [
     title: "University Selection",
     description:
       "Choose the right university based on your academic profile, budget, and future career goals.",
-    href: "/services/university-selection",
+    href: "/services/scholarship-assistance",
   },
 
   {
@@ -106,7 +106,7 @@ export const services = [
     title: "Pre Departure",
     description:
       "Receive complete guidance before flying to Japan, including accommodation and travel preparation.",
-    href: "/services/pre-departure",
+    href: "/services/pre-departure-support",
   },
 
   {
@@ -115,6 +115,6 @@ export const services = [
     title: "Career Guidance",
     description:
       "Expert counseling for higher education, internships, and long-term career opportunities in Japan.",
-    href: "/services/career-guidance",
+    href: "/services/accommodation-support",
   },
 ];

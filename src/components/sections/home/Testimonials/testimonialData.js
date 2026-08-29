@@ -13,7 +13,7 @@ const testimonials = [
     course: "Japanese Language N4",
     rating: 5,
     review:
-      "TW Education guided me throughout my JLPT preparation. Their classes were interactive, organized, and extremely helpful.",
+      "Tobira Language Academy guided me throughout my JLPT preparation. Their classes were interactive, organized, and extremely helpful.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const testimonials = [
     course: "Study Abroad Program",
     rating: 5,
     review:
-      "From language learning to visa processing, the entire team supported me at every step. I highly recommend TW Education.",
+      "From language learning to visa processing, the entire team supported me at every step. I highly recommend Tobira Language Academy.",
   },
   {
     id: 4,

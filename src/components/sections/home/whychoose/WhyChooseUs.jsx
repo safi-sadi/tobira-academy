@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
               shadow-md
             "
           >
-            Why Choose TW Education
+            Why Choose Tobira Language Academy
           </span>
 
           <h2

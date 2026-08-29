@@ -329,7 +329,7 @@ export default function AboutOffices() {
         text-red-400
       "
                   >
-                    TW Education
+                    Tobira Language Academy
                   </span>
 
                   <div

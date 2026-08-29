@@ -121,7 +121,7 @@ export default function TestimonialsSection() {
               text-slate-600
             "
           >
-            Discover how TW Education has helped students
+            Discover how Tobira Language Academy has helped students
             achieve their dreams of studying and building
             successful careers in Japan.
           </p>

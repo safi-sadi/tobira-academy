@@ -106,7 +106,7 @@ export default function AboutHero() {
             <span className="h-2 w-2 rounded-full bg-red-500" />
 
             <span className="text-sm font-semibold tracking-wide text-white">
-              About TW Education
+              About Tobira Language Academy
             </span>
           </motion.div>
 

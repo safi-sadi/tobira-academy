@@ -31,7 +31,7 @@ export default function AboutContent() {
         />
 
         <span className="text-sm font-semibold text-red-600">
-          ABOUT TW EDUCATION
+          ABOUT Tobira Language Academy
         </span>
 
       </div>
@@ -55,7 +55,7 @@ export default function AboutContent() {
       {/* Paragraph */}
 
       <p className="mt-7 text-lg leading-8 text-slate-600">
-        TW Education has helped hundreds of Bangladeshi students
+        Tobira Language Academy has helped hundreds of Bangladeshi students
         pursue higher education in Japan through professional
         university admission guidance, Japanese language training,
         scholarship consultation and student visa support.

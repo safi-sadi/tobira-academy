@@ -105,7 +105,7 @@ export default function AboutDifference() {
                 text-red-600
               "
             >
-              Why TW Education
+              Why Tobira Language Academy
             </span>
 
             <h2
