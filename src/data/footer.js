@@ -1,7 +1,7 @@
 export const footerData = {
   company: {
     description:
-      "TW Education is a trusted education consultancy helping students achieve their dream of studying in Japan through expert counseling, language education and visa support.",
+      "Tobira Language Academy is a trusted education consultancy helping students achieve their dream of studying in Japan through expert counseling, language education and visa support.",
 
     social: {
       facebook: "#",
