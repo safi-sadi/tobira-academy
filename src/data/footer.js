@@ -28,13 +28,10 @@ export const footerData = {
       title: "Japanese Courses",
       href: "/courses",
     },
+    
     {
-      title: "Testimonials",
-      href: "/testimonials",
-    },
-    {
-      title: "Our Team",
-      href: "/team",
+      title: "Gallery",
+      href: "/gallery",
     },
     {
       title: "Contact",
@@ -45,27 +42,27 @@ export const footerData = {
   services: [
     {
       title: "University Admission",
-      href: "/services#admission",
+      href: "/services/university-admission-support",
     },
     {
       title: "Visa Processing",
-      href: "/services#visa",
+      href: "/services/student-visa-processing",
     },
     {
       title: "Japanese Language",
-      href: "/services#language",
+      href: "/services/language-preparation",
     },
     {
       title: "Study Abroad Counseling",
-      href: "/services#counseling",
+      href: "/services/accommodation-support",
     },
     {
       title: "Scholarship Guidance",
-      href: "/services#scholarship",
+      href: "/services/scholarship-assistance",
     },
     {
       title: "Pre-Departure Support",
-      href: "/services#departure",
+      href:"/services/pre-departure-support",
     },
   ],
 
