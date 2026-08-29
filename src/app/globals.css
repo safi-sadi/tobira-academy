@@ -38,3 +38,24 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Hide Google widget */
+.goog-te-gadget,
+.goog-logo-link,
+.goog-te-combo {
+  display: none !important;
+}
+
+/* Hide popup iframe */
+iframe.skiptranslate {
+  display: none !important;
+}
