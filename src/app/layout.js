@@ -60,6 +60,12 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://tobira-academy.vercel.app"),
+
+  verification: {
+    google: "qS1Z3lJzKhLCtaKrRTAwAqLFEQ-ubit6C1yrUkK3_mQ",
+  },
+
   title: {
     default: "Tobira Language Academy | Study in Japan from Bangladesh",
     template: "%s | Tobira Language Academy",
@@ -101,8 +107,8 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://tobira-academy.vercel.app",
-    siteName: "TW Education",
-    title: "TW Education | Study in Japan from Bangladesh",
+    siteName: "Tobira Language Academy",
+    title: "Tobira Language Academy | Study in Japan from Bangladesh",
     description:
       "Japanese language courses, university admission, student visa and scholarship guidance for Bangladeshi students.",
     images: [
@@ -110,14 +116,14 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "TW Education - Study in Japan",
+        alt: "Tobira Language Academy - Study in Japan",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "TW Education | Study in Japan",
+    title: "Tobira Language Academy | Study in Japan",
     description:
       "Your trusted consultancy for studying in Japan from Bangladesh.",
     images: ["/og-image.jpg"],
@@ -141,6 +147,74 @@ export default function RootLayout({ children }) {
       <body className="font-sans bg-white text-gray-900 overflow-x-hidden">
 
         <div id="google_translate_element" className="hidden"></div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "EducationalOrganization",
+                  "@id": "https://tobira-academy.vercel.app/#organization",
+
+                  name: "Tobira Language Academy",
+
+                  alternateName: "Tobira Academy",
+
+                  url: "https://tobira-academy.vercel.app",
+
+                  logo: "https://tobira-academy.vercel.app/logo.png",
+
+                  image: "https://tobira-academy.vercel.app/og-image.jpg",
+
+                  description:
+                    "Tobira Language Academy is a Japanese language academy and study abroad consultancy in Bangladesh helping students study in Japan through JLPT preparation, university admission, scholarships, and student visa guidance.",
+
+                  email: "info@tobira-academy.com", // নিজের email বসাও
+
+                  telephone: "+8801XXXXXXXXX", // নিজের ফোন নাম্বার বসাও
+
+                  areaServed: {
+                    "@type": "Country",
+                    name: "Bangladesh",
+                  },
+
+                  knowsAbout: [
+                    "Study in Japan",
+                    "Japanese Language",
+                    "JLPT Preparation",
+                    "Student Visa",
+                    "Scholarships in Japan",
+                    "University Admission in Japan",
+                  ],
+
+                  sameAs: [
+                    "https://facebook.com/yourpage",
+                    "https://instagram.com/yourpage",
+                    "https://youtube.com/@yourchannel",
+                  ],
+                },
+
+                {
+                  "@type": "WebSite",
+                  "@id": "https://tobira-academy.vercel.app/#website",
+
+                  url: "https://tobira-academy.vercel.app",
+
+                  name: "Tobira Language Academy",
+
+                  publisher: {
+                    "@id":
+                      "https://tobira-academy.vercel.app/#organization",
+                  },
+
+                  inLanguage: "en",
+                },
+              ],
+            }),
+          }}
+        />
 
         <Header />
 
