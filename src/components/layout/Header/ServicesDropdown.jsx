@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "University Admission",
-    href: "/services/university-admission",
+    href: "/services/university-admission-support",
     icon: GraduationCap,
   },
   {
