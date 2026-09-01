@@ -5,9 +5,9 @@ import ContactMap from "@/components/sections/contact/ContactMap";
 import ContactFAQ from "@/components/sections/contact/ContactFAQ";
 
 export const metadata = {
-  title: "Contact Us | TW Education",
+  title: "Contact Us | Tobira Language Academy",
   description:
-    "Contact TW Education for Japanese language courses, student visa support, and study in Japan consultation.",
+    "Contact Tobira Language Academy for Japanese language courses, student visa support, and study in Japan consultation.",
 };
 
 export default function ContactPage() {
