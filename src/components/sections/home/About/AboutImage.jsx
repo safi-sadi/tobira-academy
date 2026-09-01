@@ -51,7 +51,7 @@ export default function AboutImage() {
 
       <Image
         src="/images/about/about.jpg"
-        alt="TW Education"
+        alt="Bangladeshi students learning Japanese language at Tobira Language Academy"
         width={750}
         height={900}
         priority
