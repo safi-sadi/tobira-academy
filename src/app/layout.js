@@ -130,7 +130,7 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: "images/logo/logo.jpeg",
     apple: "/apple-touch-icon.png",
   },
 };
