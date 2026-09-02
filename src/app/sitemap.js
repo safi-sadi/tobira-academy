@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://tobira-academy.vercel.app";
+  const baseUrl = "https://www.tobirajla.com/";
 
   return [
     {

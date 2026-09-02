@@ -7,6 +7,6 @@ export default function robots() {
       },
     ],
 
-    sitemap: "https://tobira-academy.vercel.app/sitemap.xml",
+    sitemap: "https://www.tobirajla.com/sitemap.xml",
   };
 }
