@@ -274,6 +274,7 @@ export const metadata = {
     "Study in Japan Consultancy",
     "Japanese Language Institute",
     "Tobira",
+    "tobira",
   ],
 
   // =========================================================
