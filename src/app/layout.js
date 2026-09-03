@@ -233,35 +233,23 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  // =========================================================
-  // WEBSITE BASE URL
-  // =========================================================
+
   metadataBase: new URL("https://www.tobirajla.com"),
 
-  // =========================================================
-  // GOOGLE SEARCH CONSOLE VERIFICATION
-  // =========================================================
   verification: {
     google: "MButaeMGyot9hBdhAHAO5HueFJn4t1WVi9F_ydwX_Eo",
   },
 
-  // =========================================================
-  // TITLE
-  // =========================================================
   title: {
     default: "Tobira Language Academy | Study in Japan from Bangladesh",
     template: "%s | Tobira Language Academy",
   },
 
-  // =========================================================
-  // DESCRIPTION
-  // =========================================================
+ 
   description:
     "Tobira Language Academy is a trusted study abroad consultancy in Bangladesh helping students study in Japan through Japanese language courses, university admission, student visa processing, scholarships, and career guidance.",
 
-  // =========================================================
-  // KEYWORDS
-  // =========================================================
+
   keywords: [
     "Study in Japan Bangladesh",
     "Tobira Language Academy",
@@ -277,9 +265,6 @@ export const metadata = {
     "tobira",
   ],
 
-  // =========================================================
-  // AUTHOR / PUBLISHER
-  // =========================================================
   authors: [{ name: "Tobira Language Academy" }],
   creator: "Tobira Language Academy",
   publisher: "Tobira Language Academy",

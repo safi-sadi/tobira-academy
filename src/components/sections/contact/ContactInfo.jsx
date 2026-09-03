@@ -15,20 +15,20 @@ const contactItems = [
   {
     icon: MapPin,
     title: "Bangladesh Office",
-    value: "Haji Camp, Airport Road, Uttara, Dhaka, Bangladesh",
+    value: "House No # 446(Sarkar Bari), 1st Floor, Nayapara, Donia Road, Shonir Akhra, Jatrabari, Dhaka., Dhaka, Bangladesh, 1236",
     href: "https://maps.google.com/?q=Haji+Camp+Airport+Road+Uttara+Dhaka",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+880 1712-345678",
-    href: "tel:+8801712345678",
+    value: "01352-309628",
+    href: "tel:+8801352-309628",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "info@tweducationbd.com",
-    href: "mailto:info@tweducationbd.com",
+    value: "www.tobirajla.com",
+    href: "mailto:www.tobirajla.com",
   },
   {
     icon: Clock3,

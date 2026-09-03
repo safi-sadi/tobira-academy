@@ -68,11 +68,11 @@ export const footerData = {
 
   contact: {
     address:
-      "House-00, Road-00, Dhanmondi, Dhaka-1205",
+      "House No # 446 (Sarkar Bari), 1st Floor, Nayapara, Donia Road, Shonir Akhra, Jatrabari, Dhaka., Dhaka, Bangladesh, 1236",
 
-    phone: "+880 1234-567890",
+    phone: "+8801352-309628",
 
-    email: "info@tweducationbd.com",
+    email: "www.tobirajla.com",
 
     officeHours:
       "Saturday - Thursday | 10:00 AM - 7:00 PM",
