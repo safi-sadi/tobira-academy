@@ -72,11 +72,11 @@ export default function AboutImage() {
 
       {/* Experience Card */}
 
-      <ExperienceCard />
+      {/* <ExperienceCard /> */}
 
       {/* Students Card */}
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -105,7 +105,7 @@ export default function AboutImage() {
         <h3 className="mt-1 text-3xl font-black text-slate-900">
           500+
         </h3>
-      </motion.div>
-    </motion.div>
+      </motion.div> */}
+    </motion.div> 
   );
 }

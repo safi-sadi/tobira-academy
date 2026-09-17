@@ -71,7 +71,7 @@ export default function HeroImage() {
 
       {/* ================= Floating Cards ================= */}
 
-      <FloatingCard
+      {/* <FloatingCard
         title="Visa Success"
         value={98}
         suffix="%"
@@ -101,7 +101,7 @@ export default function HeroImage() {
         suffix="+ Years"
         duration={4.5}
         className="-right-10 bottom-16"
-      />
+      /> */}
 
     </div>
   );

@@ -107,7 +107,7 @@ export default function CoursesSection() {
 
         {/* Floating Stats */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: .3 }}
@@ -164,7 +164,7 @@ export default function CoursesSection() {
               </h3>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Tabs */}
 

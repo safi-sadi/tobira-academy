@@ -168,13 +168,13 @@ export default function HeroContent() {
         <div className="h-10 w-px bg-slate-300" />
 
         <div>
-          <h3 className="text-xl font-bold text-slate-900">
+          {/* <h3 className="text-xl font-bold text-slate-900">
             Trusted by 500+ Students
-          </h3>
+          </h3> */}
 
-          <p className="text-slate-500">
+          {/* <p className="text-slate-500">
             Visa Success Rate 98%
-          </p>
+          </p> */}
         </div>
       </motion.div>
 
